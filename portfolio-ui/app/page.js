@@ -16,13 +16,13 @@ import Footer from "./components/Footer";
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(null)
 
-  const icons = [
-    <IoLogoHtml5 />,
-    <IoLogoCss3 />,
-    <IoLogoJavascript />,
-    <IoLogoReact />,
-    <RiTailwindCssFill />,
-    <RiNextjsFill />
+  const skillIcons = [
+    { id: 1, icon: <IoLogoHtml5 /> },
+    { id: 2, icon: <IoLogoCss3 /> },
+    { id: 3, icon: < IoLogoJavascript /> },
+    { id: 4, icon: <IoLogoReact /> },
+    { id: 5, icon: <RiTailwindCssFill /> },
+    { id: 6, icon: <RiNextjsFill /> }
   ]
 
   const openGitHub = () => {
@@ -101,12 +101,12 @@ export default function Home() {
         <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
           <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Skills</h2>
           <div className="flex flex-wrap gap-14 items-center text-center justify-center ">
-            {icons.map((icon, index) => (
+            {skillIcons.map((item) => (
               <SkillsCard
-                key={index}
-                icon={icon}
-                isActive={activeIndex === index}
-                onClick={() => { setActiveIndex(index) }}
+                key={item.id}
+                icon={item.icon}
+                isActive={activeIndex === item.id}
+                onClick={() => { setActiveIndex(item.id) }}
               />
             ))}
           </div>
