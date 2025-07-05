@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: black;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  /* indigo-500 */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  /* gray-200 */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus {
+  background-color: #4d5660 !important;
+  color: #d4d8df !important;
+  -webkit-box-shadow: 0 0 0px 1000px #4d5660 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
