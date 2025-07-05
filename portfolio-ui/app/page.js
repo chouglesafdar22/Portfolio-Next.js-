@@ -57,7 +57,7 @@ export default function Home() {
       {/* homesection */}
       <section id="home" className="text-gray-400">
         <div className="container mx-auto flex px-10 pb-10 pt-20 text-center items-center justify-center flex-col">
-          <Image src="/images/my-image.jpg" alt="my-profile" width={225} height={225} className="lg:w-1/4 md:w-1/4 mb-10 object-cover object-center rounded-full" />
+          <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-2/5 md:w-2/5 mb-10 object-cover object-center rounded-full" />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
             <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">FrontEnd Developer - Next.js, React.js, Tailwind CSS</p>
