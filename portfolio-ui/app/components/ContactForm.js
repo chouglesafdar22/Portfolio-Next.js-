@@ -22,7 +22,6 @@ function ContactForm() {
     e.preventDefault();
     try {
       await emailjs.send("service_zebyorr", "template_o8nnigi", formData, "uN-8nsJnZatxK9gZn")
-      console.log("submiit")
       toast.success('Message Send Successfully!', {
         position: "top-center",
         autoClose: 3000,
@@ -36,7 +35,6 @@ function ContactForm() {
       window.location.hash = "#home";
       setFormData({ name: "", email: "", message: "" })
     } catch (error) {
-      console.log("error: ",error)
       toast.error('Failed to send message. Try again!', {
         position: "top-center",
         autoClose: 3000,
