@@ -2,10 +2,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='bg-black text-white'>
-      <div className="container mx-auto flex flex-col justify-center text-center items-center py-15 px-10 gap-8">
-        <span className="lg:text-xl sm:text-lg text-md text-white font-mono font-medium">
-          All &copy;2025 right reserved by Safdar Chougle
+    <footer className="bg-black min-w-screen sticky bottom-0 items-center py-8 justify-center text-center text-white">
+      <div className="flex justify-center items-center text-center">
+        <span className="text-sm sm:text-base lg:text-lg font-mono font-medium">
+          All &copy;2025 rights reserved by Safdar Chougle
         </span>
       </div>
     </footer>
@@ -13,3 +13,5 @@ function Footer() {
 }
 
 export default Footer
+
+

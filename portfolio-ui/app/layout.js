@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} p-1 overflow-x-hidden justify-center items-center scroll-smooth antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col p-1 overflow-x-hidden justify-center items-center scroll-smooth antialiased`}
       >
         {children}
       </body>
