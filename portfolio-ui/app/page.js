@@ -26,7 +26,7 @@ export default function Home() {
   ]
 
   const openResume = () => {
-    window.open("https://docs.google.com/document/d/17pJ4U_BzdpocEkNCyl_Nl2tKlQLBy7FI3g5iSgqUeX4/edit?usp=drive_link", "_blank")
+    window.open("https://drive.google.com/file/d/1gLYqrOAZsgn3dwrJp8D0-NT3NtmzgXHi/view?usp=drive_link", "_blank")
   }
 
   const openGitHub = () => {
