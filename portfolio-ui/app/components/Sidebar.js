@@ -13,7 +13,7 @@ function Sidebar() {
   return (
     <>
       <button onClick={() => setIsOpen(true)} className='fixed top-5 cursor-pointer left-8'><IoIosMenu className='lg:size-13 size-11 sm:size-12 text-white' /></button>
-      <div className={`fixed top-0 left-0 h-screen bg-black text-white transition-all duration-300 ease-out z-40 ${isOpen ? "w-64" : "w-0 overflow-hidden"}`}>
+      <div className={`fixed top-0 left-0 h-screen bg-black text-white transition-all duration-300 ease-in-out z-40 ${isOpen ? "w-64" : "w-0 overflow-hidden"}`}>
         <div className='flex justify-end top-2.5 right-2.5'>
           {/* <button><MdOutlineLightMode size={24} /></button> */}
           <button className='cursor-pointer' onClick={() => setIsOpen(false)}><IoIosClose className='lg:size-13 size-11 sm:size-12' /></button>

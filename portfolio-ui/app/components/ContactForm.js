@@ -65,9 +65,9 @@ function ContactForm() {
       />
 
       <form onSubmit={submitMessage} className='flex flex-col max-w-xl mx-auto gap-2.5 justify-center items-center text-center'>
-        <input type="text" name="name" placeholder='Your Name' minLength={3} maxLength={20} value={formData.name} onChange={handleChange} required className='bg-gray-600 text-gray-300 sm:w-96 h-12 w-80 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-md p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
-        <input type="email" name="email" placeholder='abc@gmail.com' pattern='^[^\s@]+@[^\s@]+\.[^\s@]+$' value={formData.email} onChange={handleChange} required className='bg-gray-600 sm:w-96 h-12 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-md p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
-        <textarea name="message" placeholder='Hii, Safdar I want to fix the meeting with you' minLength={30} value={formData.message} rows="10" onChange={handleChange} required className='bg-gray-600 sm:w-96 h-28 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-md p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white'></textarea>
+        <input type="text" name="name" placeholder='Name' minLength={3} maxLength={20} value={formData.name} onChange={handleChange} required className='bg-gray-600 text-gray-300 sm:w-96 h-12 w-80 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-md p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
+        <input type="email" name="email" placeholder='Email' pattern='^[^\s@]+@[^\s@]+\.[^\s@]+$' value={formData.email} onChange={handleChange} required className='bg-gray-600 sm:w-96 h-12 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-md p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
+        <textarea name="message" placeholder='Message' minLength={30} value={formData.message} rows="10" onChange={handleChange} required className='bg-gray-600 sm:w-96 h-28 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-md p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white'></textarea>
         <button type="submit" className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-md p-2 m-2'>Send Message</button>
       </form>
     </div>
