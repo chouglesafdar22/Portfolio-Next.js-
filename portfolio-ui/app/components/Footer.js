@@ -8,7 +8,7 @@ function Footer() {
       <ScrollWrapper direction="down" ease="easeOut">
         <footer className="bg-black w-screen relative overflow-hidden px-2 py-5 text-white flex items-center justify-center text-center">
           <div className="flex flex-col gap-5 justify-center items-center text-center">
-            <p className="text-[7px] flex sm:text-[9px] text-center justify-center items-center lg:text-[11px] font-mono">Chiplun, Maharashtra, India</p>
+            <p className="text-[10px] flex sm:text-[12px] text-center justify-center items-center lg:text-sm font-mono">Chiplun, Maharashtra, India</p>
             <span className="text-[12px] flex sm:text-sm text-center justify-center items-center lg:text-base font-mono font-medium">
               &copy; 2025 Safdar Chougle rights reserved.
             </span>
