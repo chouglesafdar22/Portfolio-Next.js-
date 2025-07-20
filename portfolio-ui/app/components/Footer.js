@@ -9,7 +9,7 @@ function Footer() {
         <footer className="bg-black w-screen relative overflow-hidden px-2 py-5 text-white flex items-center justify-center text-center">
           <div className="flex flex-col gap-3 justify-center items-center text-center">
             <span className='"text-[8px] flex sm:text-[10px] text-center justify-center items-center lg:text-[12px] font-mono font-light"'>Chiplun, Maharashtra, India</span>
-            <span className="text-[12px] flex sm:text-sm text-center justify-center items-center lg:text-base font-mono font-medium">
+            <span className="text-sm flex sm:text-base text-center justify-center items-center lg:text-lg font-mono font-medium">
               &copy; 2025 Safdar Chougle rights reserved.
             </span>
           </div>
