@@ -60,7 +60,7 @@ export default function Home() {
       <Sidebar />
 
       {/* homesection */}
-      <ScrollWrapper direction="down" ease="easeInOut">
+      <ScrollWrapper direction="down" ease="easeOut">
         <section id="home" className="text-gray-400">
           <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] text-center items-center justify-center flex-col">
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-2/5 md:w-2/5 mb-10 object-cover object-center rounded-full" />
@@ -79,7 +79,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* aboutsection */}
-      <ScrollWrapper direction="down" ease="easeInOut">
+      <ScrollWrapper direction="down" ease="easeOut">
         <section id="about" className="text-gray-400">
           <div className="container size mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">About</h2>
@@ -94,21 +94,27 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* projectsection */}
-      <ScrollWrapper direction="left" ease="easeOut">
+      <ScrollWrapper direction="up" ease="easeIn">
         <section id="projects">
           <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Projects</h2>
             <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
-              <ProjectCard onClick={moveToHome} image="/images/portfolio-nextjs.png" title="Portfolio-Next.js" description="I have built a fully responsive portfolio UI using Next.js to showcase my projects — both completed and upcoming. All buttons and cards are fully functional, and the UI is designed to work smoothly across desktop, tablet, and mobile devices." />
-              <ProjectCard onClick={openLink2} image="/images/myTaskPlanner.png" title="myTaskPlanner" description="I created a simple yet efficient MyTaskPlanner UI using React.js, Tailwind CSS, and Vite as a learning project to enhance my front-end development skills. The application features a clean and responsive design aimed at improving task management for users." />
-              <ProjectCard onClick={openLink3} image="/images/spotify-ui-clone.png" title="Spotify-UI Clone" description="I built a fully responsive Spotify UI Clone using HTML, CSS, and JavaScript as a learning project to strengthen my front-end development skills. This application is designed to work seamlessly across desktop, tablet, and mobile devices." />
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard onClick={moveToHome} image="/images/portfolio-nextjs.png" title="Portfolio-Next.js" description="I have built a fully responsive portfolio UI using Next.js to showcase my projects — both completed and upcoming. All buttons and cards are fully functional, and the UI is designed to work smoothly across desktop, tablet, and mobile devices." />
+              </ScrollWrapper>
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard onClick={openLink2} image="/images/myTaskPlanner.png" title="myTaskPlanner" description="I created a simple yet efficient MyTaskPlanner UI using React.js, Tailwind CSS, and Vite as a learning project to enhance my front-end development skills. The application features a clean and responsive design aimed at improving task management for users." />
+              </ScrollWrapper>
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard onClick={openLink3} image="/images/spotify-ui-clone.png" title="Spotify-UI Clone" description="I built a fully responsive Spotify UI Clone using HTML, CSS, and JavaScript as a learning project to strengthen my front-end development skills. This application is designed to work seamlessly across desktop, tablet, and mobile devices." />
+              </ScrollWrapper>
             </div>
           </div>
         </section>
       </ScrollWrapper>
 
       {/* skillsection */}
-      <ScrollWrapper direction="up" ease="easeIn">
+      <ScrollWrapper direction="left" ease="easeInOut">
         <section id="skills" className="text-gray-400">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Skills</h2>
@@ -127,7 +133,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* contactsection */}
-      <ScrollWrapper direction="down" ease="easeInOut">
+      <ScrollWrapper direction="down" ease="easeOut">
         <section id="contact" className="text-gray-400">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Contact</h2>
