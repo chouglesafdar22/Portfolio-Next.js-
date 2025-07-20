@@ -60,7 +60,7 @@ export default function Home() {
       <Sidebar />
 
       {/* homesection */}
-      <ScrollWrapper direction="down">
+      <ScrollWrapper direction="down" ease="easeInOut">
         <section id="home" className="text-gray-400">
           <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-10 text-center items-center justify-center flex-col">
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-2/5 md:w-2/5 mb-10 object-cover object-center rounded-full" />
@@ -79,7 +79,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* aboutsection */}
-      <ScrollWrapper direction="down">
+      <ScrollWrapper direction="down" ease="easeInOut">
         <section id="about" className="text-gray-400">
           <div className="container size mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">About</h2>
@@ -94,7 +94,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* projectsection */}
-      <ScrollWrapper direction="left">
+      <ScrollWrapper direction="left" ease="easeOut">
         <section id="projects">
           <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Projects</h2>
@@ -108,7 +108,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* skillsection */}
-      <ScrollWrapper direction="up">
+      <ScrollWrapper direction="up" ease="easeIn">
         <section id="skills" className="text-gray-400">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Skills</h2>
@@ -127,7 +127,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* contactsection */}
-      <ScrollWrapper direction="down">
+      <ScrollWrapper direction="down" ease="easeInOut">
         <section id="contact" className="text-gray-400">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Contact</h2>
