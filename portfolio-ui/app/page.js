@@ -83,12 +83,16 @@ export default function Home() {
         <section id="about" className="text-gray-400">
           <div className="container size mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">About</h2>
-            <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-              Hii, I’m Safdar Chougle, a final-year Bachelor of Computer Science student at the University of Mumbai. I specialize in frontend development and have hands-on experience with Next.js, React.js, and Tailwind CSS. I enjoy crafting responsive, clean, and user-friendly web applications that deliver great user experiences.
-            </p>
-            <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-              I’m passionate about learning and constantly exploring new tools and technologies to grow as a developer. I’m always open to exciting projects, collaborations, and opportunities where I can contribute, learn, and make an impact. Feel free to connect or explore my work!
-            </p>
+            <ScrollWrapper direction="right" ease="easeInOut">
+              <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
+                Hii, I’m Safdar Chougle, a final-year Bachelor of Computer Science student at the University of Mumbai. I specialize in frontend development and have hands-on experience with Next.js, React.js, and Tailwind CSS. I enjoy crafting responsive, clean, and user-friendly web applications that deliver great user experiences.
+              </p>
+            </ScrollWrapper>
+            <ScrollWrapper direction="right" ease="easeInOut">
+              <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
+                I’m passionate about learning and constantly exploring new tools and technologies to grow as a developer. I’m always open to exciting projects, collaborations, and opportunities where I can contribute, learn, and make an impact. Feel free to connect or explore my work!
+              </p>
+            </ScrollWrapper>
           </div>
         </section>
       </ScrollWrapper>
@@ -114,10 +118,11 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* skillsection */}
-      <ScrollWrapper direction="left" ease="easeInOut">
+      <ScrollWrapper direction="up" ease="easeIn">
         <section id="skills" className="text-gray-400">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Skills</h2>
+            <ScrollWrapper direction="left" ease="easeInOut">
             <div className="flex flex-wrap gap-14 items-center text-center justify-center ">
               {skillIcons.map((item) => (
                 <SkillsCard
@@ -128,6 +133,7 @@ export default function Home() {
                 />
               ))}
             </div>
+            </ScrollWrapper>
           </div>
         </section>
       </ScrollWrapper>
