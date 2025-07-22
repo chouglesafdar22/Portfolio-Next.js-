@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function ScrollWrapper({ children, direction = "up", delay = "0", ease = "easeInOut" }) {
 
