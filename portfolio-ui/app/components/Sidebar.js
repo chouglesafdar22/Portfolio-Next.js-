@@ -13,7 +13,7 @@ function Sidebar() {
 
   return (
     <>
-      <motion.button initial={{ opaity: 0, y: -60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0, ease: "easeIn" }} onClick={() => setIsOpen(true)} className='fixed top-5 cursor-pointer left-8'><IoIosMenu className='lg:size-14 size-10 sm:size-12 text-white' /></motion.button>
+      <motion.button initial={{ opacity: 0, y: -60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0, ease: "easeIn" }} onClick={() => setIsOpen(true)} className='fixed top-5 cursor-pointer left-8'><IoIosMenu className='lg:size-14 size-10 sm:size-12 text-white' /></motion.button>
       <div className={`fixed top-0 left-0 h-screen bg-black text-white transition-all duration-300 ease-in-out z-40 ${isOpen ? "w-64" : "w-0 overflow-hidden"}`}>
         <div className='flex justify-end top-2.5 right-2.5'>
           {/* <button><MdOutlineLightMode size={24} /></button> */}
