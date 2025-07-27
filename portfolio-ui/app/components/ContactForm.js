@@ -22,7 +22,7 @@ function ContactForm() {
     e.preventDefault();
     try {
       await emailjs.send("service_zebyorr", "template_o8nnigi", formData, "uN-8nsJnZatxK9gZn")
-      toast.success('Message Send Successfully!', {
+      toast.success(`${formData.name} Your Message Send Successfully`, {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: false,
@@ -35,7 +35,7 @@ function ContactForm() {
       window.location.hash = "#home";
       setFormData({ name: "", email: "", message: "" })
     } catch (error) {
-      toast.error('Failed to send message. Try again!', {
+      toast.error(`${formData.name} Failed to send your message. Try again!`, {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: false,
