@@ -68,7 +68,7 @@ export default function Home() {
           <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] text-center items-center justify-center flex-col">
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-2/5 md:w-2/5 mb-10 object-cover object-center rounded-full" />
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-5xl lg:text-6xl text-4xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
+              <h1 className="title-font sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
               <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">FrontEnd Developer - Next.js, React.js, Tailwind CSS</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
                 <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-44" hoverBgColor="hover:bg-gray-600" />
