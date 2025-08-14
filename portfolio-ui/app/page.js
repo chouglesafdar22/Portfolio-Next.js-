@@ -4,12 +4,13 @@ import Image from "next/image";
 import Sidebar from "./components/Sidebar";
 import Button from "./components/Button";
 import { FaGithub } from "react-icons/fa";
-import { IoNewspaperOutline, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact } from "react-icons/io5";
+import { IoNewspaperOutline, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoGithub } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa6";
 import { TbBrandLinktree } from "react-icons/tb";
 import ProjectCard from "./components/ProjectCard";
 import SkillsCard from "./components/SkillsCard";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { DiNodejs } from "react-icons/di";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
@@ -23,7 +24,9 @@ export default function Home() {
     { id: 3, icon: < IoLogoJavascript /> },
     { id: 4, icon: <IoLogoReact /> },
     { id: 5, icon: <RiTailwindCssFill /> },
-    { id: 6, icon: <RiNextjsFill /> }
+    { id: 6, icon: <RiNextjsFill /> },
+    { id: 7, icon: <DiNodejs /> },
+    { id: 8, icon: <IoLogoGithub /> }
   ]
 
   const openResume = () => {
@@ -123,16 +126,16 @@ export default function Home() {
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">Skills</h2>
             <ScrollWrapper direction="left" ease="easeInOut">
-            <div className="flex flex-wrap gap-14 items-center text-center justify-center ">
-              {skillIcons.map((item) => (
-                <SkillsCard
-                  key={item.id}
-                  icon={item.icon}
-                  isActive={activeIndex === item.id}
-                  onClick={() => { setActiveIndex(item.id) }}
-                />
-              ))}
-            </div>
+              <div className="flex flex-wrap gap-14 items-center text-center justify-center ">
+                {skillIcons.map((item) => (
+                  <SkillsCard
+                    key={item.id}
+                    icon={item.icon}
+                    isActive={activeIndex === item.id}
+                    onClick={() => { setActiveIndex(item.id) }}
+                  />
+                ))}
+              </div>
             </ScrollWrapper>
           </div>
         </section>
