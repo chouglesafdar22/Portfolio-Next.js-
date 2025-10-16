@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Sidebar from "./components/Sidebar";
 import Button from "./components/Button";
-import { FaGithub } from "react-icons/fa";
+import { FaGitAlt, FaGithub } from "react-icons/fa";
 import { IoNewspaperOutline, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoGithub } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa6";
 import { TbBrandLinktree } from "react-icons/tb";
@@ -26,7 +26,8 @@ export default function Home() {
     { id: 5, icon: <RiTailwindCssFill /> },
     { id: 6, icon: <RiNextjsFill /> },
     { id: 7, icon: <DiNodejs /> },
-    { id: 8, icon: <IoLogoGithub /> }
+    { id: 8, icon: <FaGitAlt /> },
+    { id: 9, icon: <IoLogoGithub /> }
   ]
 
   const openResume = () => {
