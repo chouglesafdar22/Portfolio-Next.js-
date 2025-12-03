@@ -53,7 +53,7 @@ export default function Home() {
   }
 
   const open1 = () => {
-    window.open("https://github.com/chouglesafdar22/Portfolio-Next.js-","_blank")
+    window.open("https://github.com/chouglesafdar22/Portfolio-Next.js-", "_blank")
   }
 
   const openLink2 = () => {
@@ -76,7 +76,7 @@ export default function Home() {
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-1/5 md:w-1/5 mb-10 object-cover object-center rounded-full" />
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
-              <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Full-Stack Web Developer — Next.js, React.js, Node.js, Express.js, MongoDB, Tailwind CSS</p>
+              <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Full-Stack Web Developer — Next.js, Mern Stack, TypeScript, Tailwind CSS</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
                 <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-44" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-44" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
