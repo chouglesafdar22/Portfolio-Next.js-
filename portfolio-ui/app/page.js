@@ -15,7 +15,8 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
 import Navbar from "./components/Navbar";
-import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(null)
@@ -32,7 +33,7 @@ export default function Home() {
     { id: 9, icon: <IoLogoGithub /> },
     { id: 10, icon: <SiExpress /> },
     { id: 11, icon: <SiMongodb /> },
-    { id: 12, icon: <SiTypescript /> }
+    { id: 12, icon: <BiLogoTypescript /> }
   ]
 
   const openResume = () => {
