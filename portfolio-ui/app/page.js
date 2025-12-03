@@ -14,6 +14,8 @@ import { DiNodejs } from "react-icons/di";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
+import Navbar from "./components/Navbar";
+import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(null)
@@ -27,7 +29,10 @@ export default function Home() {
     { id: 6, icon: <RiNextjsFill /> },
     { id: 7, icon: <DiNodejs /> },
     { id: 8, icon: <FaGitAlt /> },
-    { id: 9, icon: <IoLogoGithub /> }
+    { id: 9, icon: <IoLogoGithub /> },
+    { id: 10, icon: <SiExpress /> },
+    { id: 11, icon: <SiMongodb /> },
+    { id: 12, icon: <SiTypescript /> }
   ]
 
   const openResume = () => {
@@ -46,31 +51,31 @@ export default function Home() {
     window.open("https://linktr.ee/safdarchougle22?utm_source=linktree_admin_share", "_blank")
   }
 
-  const moveToHome = () => {
-    window.location.hash = "#home"
+  const open1 = () => {
+    window.open("https://github.com/chouglesafdar22/Portfolio-Next.js-","_blank")
   }
 
   const openLink2 = () => {
-    window.open("https://drive.google.com/file/d/1YcZDnSNS1TFVXC6_8KiSFUUeIUjTg8J9/view?usp=drive_link", "_blank")
+    window.open("https://github.com/chouglesafdar22/PassManager", "_blank")
   }
 
   const openLink3 = () => {
-    window.open("https://drive.google.com/file/d/14TEwfDq9rmJyeYrWkGqIjCVkIlmYNhWt/view?usp=drive_link", "_blank")
+    window.open("https://github.com/chouglesafdar22/Modern-Ecommerce", "_blank")
   }
 
   return (
     <>
       {/* navbar */}
-      <Sidebar />
+      <Navbar />
 
       {/* homesection */}
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="home" className="text-gray-400">
           <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] text-center items-center justify-center flex-col">
-            <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-2/5 md:w-2/5 mb-10 object-cover object-center rounded-full" />
+            <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-1/5 md:w-1/5 mb-10 object-cover object-center rounded-full" />
             <div className="text-center lg:w-2/3 w-full">
               <h1 className="title-font sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
-              <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">FrontEnd Developer - Next.js, React.js, Tailwind CSS</p>
+              <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Full-Stack Web Developer — Next.js, React.js, Node.js, Express.js, MongoDB, Tailwind CSS</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
                 <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-44" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-44" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
@@ -89,12 +94,19 @@ export default function Home() {
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">About</h2>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                Hii, I’m Safdar Chougle, a final-year Bachelor of Computer Science student at the University of Mumbai. I specialize in frontend development and have hands-on experience with Next.js, React.js, and Tailwind CSS. I enjoy crafting responsive, clean, and user-friendly web applications that deliver great user experiences.
+                Hi, I’m Safdar Chougle — a final-year Bachelor of Computer Science student at the University of Mumbai and an aspiring Full-Stack Web Developer.
+                I specialize in building modern, scalable, and user-centric web applications using technologies like Next.js, React.js, Node.js, Express.js, MongoDB, and TypeScript.
               </p>
             </ScrollWrapper>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I’m passionate about learning and constantly exploring new tools and technologies to grow as a developer. I’m always open to exciting projects, collaborations, and opportunities where I can contribute, learn, and make an impact. Feel free to connect or explore my work!
+                I enjoy creating clean, responsive interfaces while also working on robust backend logic that ensures performance and security. I’m passionate about learning, improving, and exploring modern tech to grow as a developer.
+              </p>
+            </ScrollWrapper>
+            <ScrollWrapper direction="right" ease="easeInOut">
+              <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
+                I’m open to opportunities, collaborations, and projects where I can contribute, build impactful solutions, and level up my full-stack development journey.
+                Feel free to connect or explore my work!
               </p>
             </ScrollWrapper>
           </div>
@@ -103,18 +115,18 @@ export default function Home() {
 
       {/* projectsection */}
       <ScrollWrapper direction="up" ease="easeIn">
-        <section id="projects">
+        <section id="projects" className="pt-10">
           <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Projects</h2>
             <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
               <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard onClick={moveToHome} image="/images/portfolio-nextjs.png" title="Portfolio-Next.js" description="I have built a fully responsive portfolio UI using Next.js to showcase my projects — both completed and upcoming. All buttons and cards are fully functional, and the UI is designed to work smoothly across desktop, tablet, and mobile devices." />
+                <ProjectCard onClick={openLink3} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A complete production-ready E-commerce web application built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, Context API, Node.js, Express, MongoDB, Cloudinary, and Render/Vercel deployment. This project includes everything a real online store needs — authentication, admin dashboard, product management, cart, checkout, orders, invoices, returns system, and much more." />
+              </ScrollWrapper>
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard onClick={open1} image="/images/portfolio-nextjs.png" title="Portfolio-Next.js" description="I have built a fully responsive portfolio UI using Next.js to showcase my projects — both completed and upcoming. All buttons and cards are fully functional, and the UI is designed to work smoothly across desktop, tablet, and mobile devices." />
               </ScrollWrapper>
               <ScrollWrapper direction="down" ease="easeOut">
                 <ProjectCard onClick={openLink2} image="/images/myTaskPlanner.png" title="myTaskPlanner" description="I created a simple yet efficient MyTaskPlanner UI using React.js, Tailwind CSS, and Vite as a learning project to enhance my front-end development skills. The application features a clean and responsive design aimed at improving task management for users." />
-              </ScrollWrapper>
-              <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard onClick={openLink3} image="/images/spotify-ui-clone.png" title="Spotify-UI Clone" description="I built a fully responsive Spotify UI Clone using HTML, CSS, and JavaScript as a learning project to strengthen my front-end development skills. This application is designed to work seamlessly across desktop, tablet, and mobile devices." />
               </ScrollWrapper>
             </div>
           </div>
