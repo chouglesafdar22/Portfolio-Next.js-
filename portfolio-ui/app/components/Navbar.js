@@ -30,11 +30,14 @@ function Navbar() {
                     </div>
 
                     {/* Menu Icon */}
-                    <div
-                        className="cursor-pointer text-white text-3xl"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        {isOpen ? <IoIosClose /> : <IoIosMenu />}
+                    <div className="flex justify-center items-center gap-2.5">
+                        
+                        <div
+                            className="cursor-pointer text-white text-3xl"
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            {isOpen ? <IoIosClose /> : <IoIosMenu />}
+                        </div>
                     </div>
 
                     {/* DROPDOWN MENU (Animated) */}
@@ -44,7 +47,7 @@ function Navbar() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.3 }}
-                            className="dropdownMenu fixed top-16 left-0 w-full bg-black/30 backdrop-blur-sm text-white py-3 z-40"
+                            className="dropdownMenu fixed top-14 left-0 w-full bg-black/30 backdrop-blur-sm text-white py-3 z-40"
                         >
                             <ul className="flex flex-col items-center gap-3.5 text-lg font-semibold">
                                 <a href="#home" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">Home</a>

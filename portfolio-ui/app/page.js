@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react";
 import Image from "next/image";
-import Sidebar from "./components/Sidebar";
 import Button from "./components/Button";
 import { FaGitAlt, FaGithub } from "react-icons/fa";
 import { IoNewspaperOutline, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoGithub } from "react-icons/io5";
@@ -71,14 +70,14 @@ export default function Home() {
 
       {/* homesection */}
       <ScrollWrapper direction="down" ease="easeOut">
-        <section id="home" className="text-gray-400">
+        <section id="home" className="text-gray-400 pt-10">
           <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] text-center items-center justify-center flex-col">
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-1/5 md:w-1/5 mb-10 object-cover object-center rounded-full" />
-            <div className="text-center lg:w-2/3 w-full">
+            <div className="text-center lg:w-2/3 gap-2 w-full">
               <h1 className="title-font sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
               <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Full-Stack Web Developer — Next.js, Mern Stack, TypeScript, Tailwind CSS</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
-                <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-44" hoverBgColor="hover:bg-gray-600" />
+                {/* <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-44" hoverBgColor="hover:bg-gray-600" /> */}
                 <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-44" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<FaLinkedin />} onClick={openLinkedIn} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-44" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<TbBrandLinktree />} onClick={openLinkTree} size={40} bgColor="bg-indigo-500" title="LinkTree" textColor="text-white" hoverBgColor="hover:bg-gray-600" hoverSize="hover:w-44" hoverTextColor="hover:text-gray-300" textSize="text-lg" hoverTextSize="hover:text-xl" />
@@ -90,7 +89,7 @@ export default function Home() {
 
       {/* aboutsection */}
       <ScrollWrapper direction="down" ease="easeOut">
-        <section id="about" className="text-gray-400">
+        <section id="about" className="text-gray-400 pt-10">
           <div className="container size mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">About</h2>
             <ScrollWrapper direction="right" ease="easeInOut">
@@ -136,7 +135,7 @@ export default function Home() {
 
       {/* skillsection */}
       <ScrollWrapper direction="up" ease="easeIn">
-        <section id="skills" className="text-gray-400">
+        <section id="skills" className="text-gray-400 pt-10">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Skills</h2>
             <ScrollWrapper direction="left" ease="easeInOut">
@@ -156,7 +155,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* contactsection */}
-      <ScrollWrapper direction="down" ease="easeOut">
+      <ScrollWrapper direction="down" ease="easeOut pt-10">
         <section id="contact" className="text-gray-400">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Contact</h2>
