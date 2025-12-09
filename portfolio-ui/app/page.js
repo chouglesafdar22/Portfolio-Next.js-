@@ -33,7 +33,7 @@ export default function Home() {
     { id: 9, icon: <IoLogoGithub /> },
     { id: 10, icon: <SiExpress /> },
     { id: 11, icon: <SiMongodb /> },
-    { id: 12, icon: <BiLogoTypescript /> }
+    { id: 12, icon: <BiLogoTypescript /> },
     { id: 13, icon: <PiFigmaLogo /> }
   ]
 
