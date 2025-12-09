@@ -16,6 +16,7 @@ import ScrollWrapper from "./components/ScrollWrapper";
 import Navbar from "./components/Navbar";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { PiFigmaLogo } from "react-icons/pi";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(null)
@@ -33,6 +34,7 @@ export default function Home() {
     { id: 10, icon: <SiExpress /> },
     { id: 11, icon: <SiMongodb /> },
     { id: 12, icon: <BiLogoTypescript /> }
+    { id: 13, icon: <PiFigmaLogo /> }
   ]
 
   const openResume = () => {
