@@ -118,7 +118,7 @@ export default function Home() {
       {/* projectsection */}
       <ScrollWrapper direction="up" ease="easeIn">
         <section id="projects" className="pt-10">
-          <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-8">
+          <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-6">
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Projects</h2>
             <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
               <ScrollWrapper direction="down" ease="easeOut">
