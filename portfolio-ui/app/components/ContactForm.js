@@ -3,6 +3,8 @@ import React from 'react'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
+import Link from 'next/link';
+import { SecondaryButton } from './Button';
 
 function ContactForm() {
   const [formData, setFormData] = useState(
@@ -63,13 +65,18 @@ function ContactForm() {
         pauseOnHover
         theme="light"
       />
-
-      <form onSubmit={submitMessage} className='flex flex-col max-w-xl mx-auto gap-2.5 justify-center items-center text-center'>
-        <input type="text" name="name" placeholder='Name' minLength={3} maxLength={20} value={formData.name} onChange={handleChange} required className='bg-gray-600 text-gray-300 sm:w-96 h-12 w-80 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-base p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
-        <input type="email" name="email" placeholder='Email' pattern='^[^\s@]+@[^\s@]+\.[^\s@]+$' value={formData.email} onChange={handleChange} required className='bg-gray-600 sm:w-96 h-12 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-base p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
-        <textarea name="message" placeholder='Message' minLength={30} value={formData.message} rows="10" onChange={handleChange} required className='bg-gray-600 sm:w-96 h-28 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-base p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white'></textarea>
-        <button type="submit" className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-base p-2 m-2'>Send Message</button>
-      </form>
+      <div className='flex flex-col gap-[1px]'>
+        <form onSubmit={submitMessage} className='flex flex-col max-w-xl mx-auto gap-2.5 justify-center items-center text-center'>
+          <input type="text" name="name" placeholder='Name' minLength={3} maxLength={20} value={formData.name} onChange={handleChange} required className='bg-gray-600 text-gray-300 sm:w-96 h-12 w-80 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-base p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
+          <input type="email" name="email" placeholder='Email' pattern='^[^\s@]+@[^\s@]+\.[^\s@]+$' value={formData.email} onChange={handleChange} required className='bg-gray-600 sm:w-96 h-12 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-base p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white' />
+          <textarea name="message" placeholder='Message' minLength={30} value={formData.message} rows="10" onChange={handleChange} required className='bg-gray-600 sm:w-96 h-28 w-80 text-gray-300 rounded-lg lg:text-xl sm:text-lg font-normal font-mono text-base p-2 m-2 focus:outline-none focus:ring-2 focus:ring-white'></textarea>
+          <button type="submit" className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-base p-2 m-2'>Send Message</button>
+        </form>
+        <p className='text-gray-300 lg:text-xl sm:text-lg font-medium font-mono text-base p-2 m-2'>or</p>
+        <Link href={"https://cal.com/safdarchougle"} target='_blank' rel="noopener noreferrer">
+          <button className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-base p-2 m-2'>Schedule Meeting</button>
+        </Link>
+      </div>
     </div>
   )
 }
