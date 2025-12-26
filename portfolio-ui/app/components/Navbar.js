@@ -30,7 +30,7 @@ function Navbar() {
                     </div>
 
                     {/* Menu Icon */}
-                    <div className="flex justify-center items-center gap-2.5">
+                    {/* <div className="flex justify-center items-center gap-2.5">
                         
                         <div
                             className="cursor-pointer text-white text-3xl"
@@ -38,7 +38,7 @@ function Navbar() {
                         >
                             {isOpen ? <IoIosClose /> : <IoIosMenu />}
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* DROPDOWN MENU (Animated) */}
                     {isOpen && (
