@@ -82,7 +82,7 @@ export default function Home() {
                 <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<FaLinkedin />} onClick={openLinkedIn} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<TbBrandLinktree />} onClick={openLinkTree} size={40} bgColor="bg-indigo-500" title="LinkTree" textColor="text-white" hoverBgColor="hover:bg-gray-600" hoverSize="hover:w-[168px]" hoverTextColor="hover:text-gray-300" textSize="text-lg" hoverTextSize="hover:text-xl" />
-                <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-[168px]" hoverBgColor="hover:bg-gray-600" />
+                {/* <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-[168px]" hoverBgColor="hover:bg-gray-600" /> */}
               </div>
             </div>
           </div>
