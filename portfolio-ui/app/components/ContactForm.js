@@ -4,7 +4,6 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import Link from 'next/link';
-import { SecondaryButton } from './Button';
 
 function ContactForm() {
   const [formData, setFormData] = useState(
