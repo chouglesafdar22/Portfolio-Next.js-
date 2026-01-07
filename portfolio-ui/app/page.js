@@ -37,6 +37,18 @@ export default function Home() {
     { id: 11, icon: <PiFigmaLogo /> }
   ]
 
+  const openGitHub=()=>{
+    window.open("https://github.com/chouglesafdar22","_blank")
+  };
+
+  const openLinkedIn=()=>{
+    window.open("https://www.linkedin.com/in/safdar-chougle-5a080729b/","_blank")
+  };
+
+  const openLinkTree=()=>{
+    window.open("https://linktr.ee/safdarchougle22?utm_source=linktree_admin_share","_blank")
+  };
+
   return (
     <>
       {/* navbar */}
@@ -45,15 +57,15 @@ export default function Home() {
       {/* homesection */}
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="home" className="text-gray-400 pt-10">
-          <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] text-center items-center justify-center flex-col">
+          <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] items-center justify-center flex-col">
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-1/5 md:w-1/5 mb-10 object-cover object-center rounded-full" />
             <div className="text-center lg:w-2/3 gap-2 w-full">
-              <h1 className="title-font sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
-              <p className="leading-relaxed text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Frontend Web Developer — Next.js | React.js | TypeScript | Tailwind CSS</p>
+              <h1 className="title-font text-center sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
+              <p className="leading-relaxed text-center text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Frontend Web Developer — Next.js | React.js | TypeScript | Tailwind CSS</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
-                <Button icon={<FaGithub />} href={"https://github.com/chouglesafdar22"} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
-                <Button icon={<FaLinkedin />} href={"https://www.linkedin.com/in/safdar-chougle-5a080729b/"} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
-                <Button icon={<TbBrandLinktree />} href={"https://linktr.ee/safdarchougle22?utm_source=linktree_admin_share"} size={40} bgColor="bg-indigo-500" title="LinkTree" textColor="text-white" hoverBgColor="hover:bg-gray-600" hoverSize="hover:w-[168px]" hoverTextColor="hover:text-gray-300" textSize="text-lg" hoverTextSize="hover:text-xl" />
+                <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                <Button icon={<FaLinkedin />} onClick={openLinkedIn} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                <Button icon={<TbBrandLinktree />} onClick={openLinkTree} size={40} bgColor="bg-indigo-500" title="LinkTree" textColor="text-white" hoverBgColor="hover:bg-gray-600" hoverSize="hover:w-[168px]" hoverTextColor="hover:text-gray-300" textSize="text-lg" hoverTextSize="hover:text-xl" />
                 {/* <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-[168px]" hoverBgColor="hover:bg-gray-600" /> */}
               </div>
             </div>
