@@ -104,9 +104,6 @@ export default function Home() {
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Projects</h2>
             <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
               <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard href={"https://github.com/chouglesafdar22/TeamTaskFlow"} image="/images/teamTaskFlow.png" title="TeamTaskFlow" description="TeamTaskFlow helps teams organize work, assign tasks, and track progress using a simple Kanban workflow. Landing Page" />
-              </ScrollWrapper>
-              <ScrollWrapper direction="down" ease="easeOut">
                 <ProjectCard href={"https://github.com/chouglesafdar22/Modern-Ecommerce"} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A complete production-ready E-commerce web application built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, Context API, Node.js, Express, MongoDB, Cloudinary, and Render/Vercel deployment. This project includes everything a real online store needs — authentication, admin dashboard, product management, cart, checkout, orders, invoices, returns system, and much more." />
               </ScrollWrapper>
               <ScrollWrapper direction="down" ease="easeOut">
