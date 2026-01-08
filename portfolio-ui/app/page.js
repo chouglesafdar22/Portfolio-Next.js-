@@ -31,10 +31,10 @@ export default function Home() {
     { id: 7, icon: <DiNodejs /> },
     { id: 8, icon: <IoLogoGithub /> },
     { id: 9, icon: <FaGitAlt /> },
-    { id: 10, icon: <SiExpress /> },
-    { id: 11, icon: <SiMongodb /> },
-    { id: 12, icon: <BiLogoTypescript /> },
-    { id: 13, icon: <PiFigmaLogo /> }
+    // { id: 10, icon: <SiExpress /> },
+    // { id: 11, icon: <SiMongodb /> },
+    { id: 10, icon: <BiLogoTypescript /> },
+    { id: 11, icon: <PiFigmaLogo /> }
   ]
 
   const openGitHub = () => {
@@ -61,7 +61,7 @@ export default function Home() {
             <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-1/5 md:w-1/5 mb-10 object-cover object-center rounded-full" />
             <div className="text-center lg:w-2/3 gap-2 w-full">
               <h1 className="title-font text-center sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
-              <p className="leading-relaxed text-center text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Full-Stack Web Developer (MERN) | Next.js, TypeScript, Tailwind CSS</p>
+              <p className="leading-relaxed text-center text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Frontend Web Developer | Next.js, React.js, TypeScript, Tailwind CSS</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
                 <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 <Button icon={<FaLinkedin />} onClick={openLinkedIn} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
@@ -80,17 +80,17 @@ export default function Home() {
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">About</h2>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                Hi, I’m Safdar Chougle — a final-year Bachelor of Computer Science student at the University of Mumbai and an aspiring Full-Stack Web Developer. I specialize in building modern, scalable, and user-centric web applications using technologies like Next.js, MERN, TypeScript & Tailwind CSS.
+                Hi, I’m Safdar Chougle — a final-year Bachelor of Computer Science student at the University of Mumbai and a frontend-focused developer. I specialize in building modern, scalable, and user-centric web interfaces using Next.js, React.js, TypeScript, and Tailwind CSS.
               </p>
             </ScrollWrapper>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I enjoy creating clean, responsive interfaces while also working on robust backend logic that ensures performance and security. I’m passionate about learning, improving, and exploring modern tech to grow as a developer.
+                I’m passionate about continuous improvement and practical problem solving through real projects rather than tutorials. I enjoy translating requirements into well-structured frontend code with reusable components and consistent design systems.
               </p>
             </ScrollWrapper>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I’m open to opportunities, collaborations, and projects where I can contribute, build impactful solutions, and level up my full-stack development journey. Feel free to connect or explore my work!
+                I’m open to opportunities, collaborations, and projects where I can contribute, build impactful solutions, and level up my Frontend Web development journey. Feel free to connect or explore my work!
               </p>
             </ScrollWrapper>
           </div>
@@ -103,9 +103,9 @@ export default function Home() {
           <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-6">
             <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Projects</h2>
             <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
-              {/* <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard href={"https://github.com/chouglesafdar22/TeamTaskFlow"} image="/images/teamTaskFlow.png" title="TeamTaskFlow" description="TeamTaskFlow helps teams organize work, assign tasks, and track progress using a simple Kanban workflow. (Ongoing Project)" />
-              </ScrollWrapper> */}
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard href={"https://github.com/chouglesafdar22/TeamTaskFlow"} image="/images/teamTaskFlow.png" title="TeamTaskFlow" description="TeamTaskFlow helps teams organize work, assign tasks, and track progress using a simple Kanban workflow. Landing Page" />
+              </ScrollWrapper>
               <ScrollWrapper direction="down" ease="easeOut">
                 <ProjectCard href={"https://github.com/chouglesafdar22/Modern-Ecommerce"} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A complete production-ready E-commerce web application built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, Context API, Node.js, Express, MongoDB, Cloudinary, and Render/Vercel deployment. This project includes everything a real online store needs — authentication, admin dashboard, product management, cart, checkout, orders, invoices, returns system, and much more." />
               </ScrollWrapper>
