@@ -53,7 +53,7 @@ function Navbar() {
                             <a href="#aboutme" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">ABOUT ME</a>
                             <a href="#skills" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">SKILLS</a>
                             <a href="#projects" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">PROJECTS</a>
-                            <a href="#contact" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">LET'S WORK TOGETHER</a>
+                            <a href="#contact" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">LET WORK TOGETHER</a>
                         </ul>
                     </motion.div>
                 )}

@@ -72,7 +72,7 @@ export default function Home() {
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">ABOUT ME</h2>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I'm a Full-Stack Web Developer specializing in MERN Stack.
+                I am a Full-Stack Web Developer specializing in MERN Stack.
                 I focus on building complete, production-ready web applications — including secure authentication, admin dashboards, backend APIs, and database design.
               </p>
             </ScrollWrapper>
@@ -83,7 +83,7 @@ export default function Home() {
             </ScrollWrapper>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I'm currently looking for remote junior roles, contract work, or freelance opportunities where I can contribute & grow.
+                I am currently looking for remote junior roles, contract work, or freelance opportunities where I can contribute & grow.
               </p>
             </ScrollWrapper>
           </div>
@@ -136,7 +136,7 @@ export default function Home() {
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="contact" className="text-gray-400 pt-10">
           <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-6">
-            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">LET'S WORK TOGETHER</h2>
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">LET WORK TOGETHER</h2>
             <p className="leading-relaxed md:text-center text-white text-left text-lg sm:text-xl lg:text-2xl font-light font-mono">Have a project idea or need a full-stack web developer?</p>
             <div className="flex justify-center items-center text-center">
               <ContactForm />
