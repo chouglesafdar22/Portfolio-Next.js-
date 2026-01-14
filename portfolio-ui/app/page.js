@@ -37,20 +37,13 @@ export default function Home() {
     { id: 13, icon: <PiFigmaLogo /> }
   ]
 
-  const openGitHub = () => {
-    window.open("https://github.com/chouglesafdar22", "_blank")
+  const openMail = () => {
+    // window.open("mailto:chouglesafdar22@gmail.com", "_blank")
+    window.location.href = "#contact"
   };
 
   const openLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/safdar-chougle-5a080729b/", "_blank")
-  };
-
-  const openLinkTree = () => {
-    window.open("https://linktr.ee/safdarchougle22?utm_source=linktree_admin_share", "_blank")
-  };
-
-  const openResume = () => {
-    window.open("https://www.notion.so/Safdar-Chougle-2e51df19650580cca7dbf8c415f136a3?source=copy_link", "_blank")
+    window.location.href = "#projects"
   };
 
   return (
@@ -62,15 +55,13 @@ export default function Home() {
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="home" className="text-gray-400 pt-10">
           <div className="container mx-auto flex px-10 pb-10 sm:pt-20 pt-[70px] items-center justify-center flex-col">
-            <Image src="/images/my-image.jpg" alt="my-profile" width={230} height={230} className="lg:w-1/5 md:w-1/5 mb-10 object-cover object-center rounded-full" />
+            <Image src="/images/my-image.jpg" alt="my-profile" width={250} height={250} className="mb-10 object-cover object-center rounded-full" />
             <div className="lg:w-2/3 gap-2 w-full">
-              <h1 className="title-font text-center sm:text-4xl lg:text-5xl text-3xl mb-4 font-bold font-mono text-white">Safdar Chougle</h1>
-              <p className="leading-relaxed md:text-center text-left text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">Full-Stack Web Developer | MERN, Next.js, TypeScript, Tailwind CSS | Building Modern Web Apps.</p>
+              <h1 className="title-font md:text-center text-left sm:text-[28px] lg:text-[34px] text-[22px] mb-4 font-semibold font-mono text-white">Full-Stack MERN Developer building production-ready web applications</h1>
+              <p className="leading-relaxed md:text-center text-left text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">I build complete web apps — authentication, dashboards, APIs, and databases — for startups and small businesses that need real, working products.</p>
               <div className="flex sm:flex-row flex-col justify-center gap-4">
-                <Button icon={<FaGithub />} onClick={openGitHub} title="GitHub" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
-                <Button icon={<FaLinkedin />} onClick={openLinkedIn} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} hoverSize="hover:w-[168px]" bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
-                <Button icon={<TbBrandLinktree />} onClick={openLinkTree} size={40} bgColor="bg-indigo-500" title="LinkTree" textColor="text-white" hoverBgColor="hover:bg-gray-600" hoverSize="hover:w-[168px]" hoverTextColor="hover:text-gray-300" textSize="text-lg" hoverTextSize="hover:text-xl" />
-                <Button icon={<IoNewspaperOutline />} onClick={openResume} title="Resume" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" hoverTextColor="hover:text-gray-300" textColor="text-white" hoverSize="hover:w-[168px]" hoverBgColor="hover:bg-gray-600" />
+                <Button onClick={openMail} title="Hire Me" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                <Button onClick={openLinkedIn} title="View Projects" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
               </div>
             </div>
           </div>
@@ -79,45 +70,25 @@ export default function Home() {
 
       {/* aboutsection */}
       <ScrollWrapper direction="down" ease="easeOut">
-        <section id="about" className="text-gray-400 pt-10">
+        <section id="aboutme" className="text-gray-400 pt-10">
           <div className="container size mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
-            <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">About</h2>
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">ABOUT ME</h2>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                Hi, I’m Safdar Chougle — a final-year Bachelor of Computer Science student at the University of Mumbai and an aspiring Full-Stack Web Developer. I specialize in building modern, scalable, and user-centric web applications using technologies like Next.js, MERN, TypeScript & Tailwind CSS.
+                I'm a Full-Stack Web Developer specializing in MERN Stack.
+                I focus on building complete, production-ready web applications — including secure authentication, admin dashboards, backend APIs, and database design.
               </p>
             </ScrollWrapper>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I enjoy creating clean, responsive interfaces while also working on robust backend logic that ensures performance and security. I’m passionate about learning, improving, and exploring modern tech to grow as a developer.
+                I enjoy working on real-world problems where I can own both frontend and backend development and deliver features that actually work, not just demos.
               </p>
             </ScrollWrapper>
             <ScrollWrapper direction="right" ease="easeInOut">
               <p className="lg:text-2xl sm:text-xl text-lg font-mono font-normal lg:px-16">
-                I’m open to opportunities, collaborations, and projects where I can contribute, build impactful solutions, and level up my full-stack development journey.
-                Feel free to connect or explore my work!
+                I'm currently looking for remote junior roles, contract work, or freelance opportunities where I can contribute & grow.
               </p>
             </ScrollWrapper>
-          </div>
-        </section>
-      </ScrollWrapper>
-
-      {/* projectsection */}
-      <ScrollWrapper direction="up" ease="easeIn">
-        <section id="projects" className="pt-10">
-          <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-6">
-            <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Projects</h2>
-            <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
-              <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard href={"https://github.com/chouglesafdar22/Modern-Ecommerce"} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A complete production-ready E-commerce web application built with Next.js, TypeScript, Tailwind CSS, ShadCN UI, Context API, Node.js, Express, MongoDB, Cloudinary, and Render/Vercel deployment. This project includes everything a real online store needs — authentication, admin dashboard, product management, cart, checkout, orders, invoices, returns system, and much more." />
-              </ScrollWrapper>
-              <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard href={"https://github.com/chouglesafdar22/Portfolio-Next.js-"} image="/images/portfolio-nextjs.png" title="Portfolio-Next.js" description="I have built a fully responsive portfolio UI using Next.js to showcase my projects — both completed and upcoming. All buttons and cards are fully functional, and the UI is designed to work smoothly across desktop, tablet, and mobile devices." />
-              </ScrollWrapper>
-              <ScrollWrapper direction="down" ease="easeOut">
-                <ProjectCard href={"https://github.com/chouglesafdar22/myTaskPlanner"} image="/images/myTaskPlanner.png" title="myTaskPlanner" description="I created a simple yet efficient MyTaskPlanner UI using React.js, Tailwind CSS, and Vite as a learning project to enhance my front-end development skills. The application features a clean and responsive design aimed at improving task management for users." />
-              </ScrollWrapper>
-            </div>
           </div>
         </section>
       </ScrollWrapper>
@@ -125,8 +96,9 @@ export default function Home() {
       {/* skillsection */}
       <ScrollWrapper direction="up" ease="easeIn">
         <section id="skills" className="text-gray-400 pt-10">
-          <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
-            <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Skills</h2>
+          <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-10">
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-center text-white font-mono font-medium">SKILLS</h2>
+
             <ScrollWrapper direction="left" ease="easeInOut">
               <div className="flex flex-wrap gap-14 items-center text-center justify-center ">
                 {skillIcons.map((item) => (
@@ -143,11 +115,32 @@ export default function Home() {
         </section>
       </ScrollWrapper>
 
+      {/* projectsection */}
+      <ScrollWrapper direction="up" ease="easeIn">
+        <section id="projects" className="pt-10">
+          <div className=" w-full flex flex-col justify-center items-center py-10 px-10 gap-6">
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">PROJECTS</h2>
+            <div className="flex items-center xl:justify-center sm:overflow-x-auto w-full sm:flex-row flex-col gap-6">
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard href={"https://github.com/chouglesafdar22/Modern-Ecommerce"} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A full-stack e-commerce web application built using the MERN stack. This project focuses on implementing the core structure of an online store with frontend and backend integration. Tech Stack - Next.js / React, Node.js, Express.js, MongoDB, Tailwind CSS." />
+              </ScrollWrapper>
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard href={"https://github.com/chouglesafdar22/Portfolio-Next.js-"} image="/images/portfolio-nextjs.png" title="Portfolio-Next.js" description="A personal developer portfolio website built using Next.js to showcase projects, skills, and contact information in a clean and responsive layout. Tech Stack - Next.js, React, Tailwind CSS" />
+              </ScrollWrapper>
+              <ScrollWrapper direction="down" ease="easeOut">
+                <ProjectCard href={"https://github.com/chouglesafdar22/myTaskPlanner"} image="/images/myTaskPlanner.png" title="myTaskPlanner" description="A task planner web application designed to manage daily tasks and improve personal productivity. The application features a clean and responsive design aimed at improving task management for users. Tech Stack - React, Tailwind CSS" />
+              </ScrollWrapper>
+            </div>
+          </div>
+        </section>
+      </ScrollWrapper>
+
       {/* contactsection */}
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="contact" className="text-gray-400 pt-10">
-          <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-8">
-            <h2 className="lg:text-5xl sm:text-4xl text-3xl text-white font-mono font-medium">Contact</h2>
+          <div className="container mx-auto flex flex-col justify-center items-center py-10 px-10 gap-6">
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white font-mono font-medium">LET'S WORK TOGETHER</h2>
+            <p className="leading-relaxed md:text-center text-white text-left text-lg sm:text-xl lg:text-2xl font-light font-mono">Have a project idea or need a full-stack web developer?</p>
             <div className="flex justify-center items-center text-center">
               <ContactForm />
             </div>
