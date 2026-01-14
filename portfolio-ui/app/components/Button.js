@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 export function Button({ title, onClick, bgColor = "", size = "", textColor = "", hoverTextColor = "", hoverBgColor = "", hoverSize = "", textSize = "" }) {
     return (
