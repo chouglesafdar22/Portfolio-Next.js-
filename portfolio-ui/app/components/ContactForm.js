@@ -72,9 +72,14 @@ function ContactForm() {
           <button type="submit" className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-base p-2 m-2'>Send Message</button>
         </form>
         <p className='text-gray-300 lg:text-lg sm:text-base font-medium font-mono text-sm p-2 m-2'>or reach me directly</p>
+        <div className='flex flex-col justify-center items-center gap-[2px]'>
         <Link href={"mailto:chouglesafdar22@gmail.com"} target='_blank' rel="noopener noreferrer">
           <button className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-base gap-2 items-center p-2 m-2'>Email</button>
         </Link>
+        <Link href={"https://calendly.com/chouglesafdar22/30min"} target='_blank' rel="noopener noreferrer">
+          <button className='bg-gray-600 hover:bg-gray-700 text-gray-300 hover:text-gray-400 sm:w-80 h-12 w-72 rounded-2xl lg:text-xl sm:text-lg cursor-pointer font-medium font-mono text-base gap-2 items-center p-2 m-2'>Schedule a Call</button>
+        </Link>
+        </div>
       </div>
     </div>
   )
