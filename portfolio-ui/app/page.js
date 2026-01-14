@@ -2,10 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "./components/Button";
-import { FaGitAlt, FaGithub } from "react-icons/fa";
-import { IoNewspaperOutline, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoGithub } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa6";
-import { TbBrandLinktree } from "react-icons/tb";
+import { FaGitAlt } from "react-icons/fa";
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoGithub } from "react-icons/io5";
 import ProjectCard from "./components/ProjectCard";
 import SkillsCard from "./components/SkillsCard";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
@@ -38,7 +36,6 @@ export default function Home() {
   ]
 
   const openMail = () => {
-    // window.open("mailto:chouglesafdar22@gmail.com", "_blank")
     window.location.href = "#contact"
   };
 

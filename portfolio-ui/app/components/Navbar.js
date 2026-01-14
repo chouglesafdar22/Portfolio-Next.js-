@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -55,10 +54,6 @@ function Navbar() {
                             <a href="#skills" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">SKILLS</a>
                             <a href="#projects" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">PROJECTS</a>
                             <a href="#contact" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">LET'S WORK TOGETHER</a>
-                            {/* <Link href={"/"} className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">Home</Link>
-                                <Link href={"/projects"} className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">Projects</Link> */}
-                            {/* <li className="hover:text-gray-300 cursor-pointer">Skills</li>
-                        <li className="hover:text-gray-300 cursor-pointer">Contact</li> */}
                         </ul>
                     </motion.div>
                 )}
