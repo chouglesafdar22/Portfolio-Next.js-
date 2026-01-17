@@ -11,9 +11,9 @@ function Footer() {
   return (
     <motion.footer initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0, ease: "easeInOut" }} className="bg-black w-screen relative bottom overflow-hidden px-3 py-7 text-white flex items-center justify-center text-center">
       <div className="flex flex-col gap-2.5 justify-center items-center text-center">
-        <div className='flex flex-row gap-3 justify-center items-center'>
+        <div className='flex flex-row md:gap-6 gap-3 justify-center items-center'>
           <div className="facebook flex items-center cursor-pointer justify-center text-center size-8 hover:bg-gray-400 text-white rounded-full hover:text-gray-800">
-            <Link href={"www.linkedin.com/in/safdar-chougle"} className='text-xl'><IoLogoLinkedin /></Link>
+            <Link href={"https://www.linkedin.com/in/safdar-chougle"} className='text-xl'><IoLogoLinkedin /></Link>
           </div>
           <div className="instagram flex items-center cursor-pointer justify-center text-center size-8 hover:bg-gray-400 text-white rounded-full hover:text-gray-800">
             <Link href={"https://github.com/chouglesafdar22"} className='text-xl'><IoLogoGithub /></Link>

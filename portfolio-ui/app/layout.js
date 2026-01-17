@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Safdar Chougle Portfolio",
-  description: "I specialize in frontend development and have hands-on experience with Next.js, React.js, and Tailwind CSS. I enjoy crafting responsive, clean, and user-friendly web applications that deliver great user experiences.",
+  title: "Safdar Chougle | Developer",
+  description: "I am a Full-Stack Web Developer specializing in MERN Stack. I focus on building complete, production-ready web applications — including secure authentication, admin dashboards, backend APIs, and database design.",
 };
 
 export default function RootLayout({ children }) {

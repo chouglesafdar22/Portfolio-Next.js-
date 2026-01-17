@@ -21,6 +21,7 @@ function Navbar() {
                             alt="logo"
                             width={50}
                             height={50}
+
                             className="object-cover rounded-full"
                         />
                         <h1 className="xl:text-3xl lg:text-2xl sm:text-xl text-lg text-white font-extrabold font-sans">
@@ -46,7 +47,7 @@ function Navbar() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
-                        className="dropdownMenu fixed top-14 left-0 bg-black/50 backdrop-blur-md w-full text-white py-3 z-40"
+                        className="dropdownMenu fixed top-14 right-0 bg-black h-fit w-full items-center text-white py-3 px-3 z-40"
                     >
                         <ul className="flex flex-col items-center gap-3.5 px-2.5 text-lg font-semibold">
                             <a href="#home" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">HOME</a>
