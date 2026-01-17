@@ -12,7 +12,7 @@ export default function ScrollWrapper({ children, direction = "up", delay = "0",
     if (direction === "fade") initial = { opacity: 0 };
 
     return (
-        <motion.div initial={initial} whileInView={{ opacity: 1, x: 0, y: 0 }} viewport={{ once: false, amount: 0.6 }} transition={{ duration: 0.8, delay, ease }}>
+        <motion.div initial={initial} whileInView={{ opacity: 1, x: 0, y: 0 }} viewport={{ once: false, amount: 0.1 }} transition={{ duration: 0.8, delay, ease }}>
             {children}
         </motion.div>
     )
