@@ -59,7 +59,7 @@ export default function Home() {
       </ScrollWrapper>
 
       {/* skillsection */}
-      <section id="skills" className="text-gray-400 pt-14 flex w-full">
+      <section id="skills" className="text-gray-400 pt-14 flex justify-center w-full">
         <div className="flex flex-col justify-center py-10 px-5 gap-10">
           <ScrollWrapper direction="fade" ease="easeIn">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-mono font-medium">SKILLS</h2>
