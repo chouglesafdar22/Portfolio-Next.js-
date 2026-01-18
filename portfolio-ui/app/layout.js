@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Safdar Chougle | Developer",
-  description: "I am a Full-Stack Web Developer specializing in MERN Stack. I focus on building complete, production-ready web applications — including secure authentication, admin dashboards, backend APIs, and database design.",
+  description: "I am Frontend-focused full-stack web developer experienced in building production-ready web applications with Next.js, React, Node.js, Express, and MongoDB. Skilled in authentication, dashboards, REST APIs, and database-driven features, with experience delivering end-to-end functionality and deployments.",
 };
 
 export default function RootLayout({ children }) {
