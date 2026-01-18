@@ -67,7 +67,7 @@ export default function Home() {
           <ScrollWrapper direction="left" ease="easeInOut">
             <div className="flex flex-col md:gap-14 gap-7 items-center justify-center">
               <SkillsCard title={"FrontEnd"} icon1={<RiNextjsFill />} icon2={<IoLogoReact />} icon3={<BiLogoTypescript />} icon4={<RiTailwindCssFill />} />
-              <SkillsCard title={"BackEnd"} icon1={<FaNodeJs />} icon2={<SiExpress />} icon3={<SiMongodb />} />
+              <SkillsCard title={"Backend"} icon1={<FaNodeJs />} icon2={<SiExpress />} icon3={<SiMongodb />} />
               <SkillsCard title={"Tools"} icon1={<IoLogoGithub />} icon2={<FaGitAlt />} icon3={<PiFigmaLogo />} />
             </div>
           </ScrollWrapper>
