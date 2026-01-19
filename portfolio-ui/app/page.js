@@ -34,7 +34,7 @@ export default function Home() {
       {/* homesection */}
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="home" className="text-gray-400 md:pt-28 pt-16 flex w-full">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-2 px-5 pb-10 w-full sm:pt-20 pt-[70px] justify-center">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-2 px-5 pb-10 w-full sm:pt-20 pt-16 justify-center">
             <div className="flex justify-center items-center">
               <Image
                 src="/images/my-image.jpg"
@@ -43,7 +43,7 @@ export default function Home() {
                 height={300}
                 loading='eager'
                 unoptimized
-                className="mb-10 object-cover object-center rounded-lg border-t-indigo-500 border-r-indigo-500 border-b-gray-500 border-l-gray-500 border-4"
+                className="mb-10 object-cover object-center rounded-lg"
               />
             </div>
             <div className="flex flex-col justify-items-start">
