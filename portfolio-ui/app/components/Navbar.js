@@ -7,7 +7,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar flex flex-col fixed top-0 w-full bg-black/30 backdrop-blur-sm z-40 md:py-5 py-2.5 md:px-5 px-2.5">
+            <nav className="navbar flex flex-col fixed top-0 w-full bg-black/30 backdrop-blur-sm z-40 md:py-5 py-3 md:px-5 px-3">
                 <div className="flex flex-col">
                     <div className="justify-between flex flex-row items-center">
                         <div className="logo justify-center items-center text-center">
@@ -24,7 +24,7 @@ export default function Navbar() {
                     <div className={`${isOpen ? "block" : "hidden"} items-center text-white transition-all duration-initial ease-in-out`}>
                         <ul className="flex flex-col justify-center items-center gap-3.5 py-3 px-2.5 text-lg font-semibold">
                             <a href="#home" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">HOME</a>
-                            <a href="#aboutme" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">ABOUT ME</a>
+                            {/* <a href="#aboutme" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">ABOUT ME</a> */}
                             <a href="#skills" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">SKILLS</a>
                             <a href="#projects" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">PROJECTS</a>
                             <a href="#contact" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">LET WORK TOGETHER</a>
