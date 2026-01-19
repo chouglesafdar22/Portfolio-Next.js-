@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
+import ScrollWrapper from "./ScrollWrapper";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,15 +22,17 @@ export default function Navbar() {
                             {isOpen ? <IoIosClose /> : <IoIosMenu />}
                         </div>
                     </div>
-                    <div className={`${isOpen ? "block" : "hidden"} items-center text-white transition-all duration-initial ease-in-out`}>
-                        <ul className="flex flex-col justify-center items-center gap-3.5 py-3 px-2.5 text-lg font-semibold">
-                            <a href="#home" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">HOME</a>
-                            {/* <a href="#aboutme" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">ABOUT ME</a> */}
-                            <a href="#skills" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">SKILLS</a>
-                            <a href="#projects" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">PROJECTS</a>
-                            <a href="#contact" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">LET WORK TOGETHER</a>
-                        </ul>
-                    </div>
+                    <ScrollWrapper direction="up" ease="easeInOut">
+                        <div className={`${isOpen ? "block" : "hidden"} items-center text-white transition-all duration-initial ease-in-out`}>
+                            <ul className="flex flex-col justify-center items-center gap-3.5 py-3 px-2.5 text-lg font-semibold">
+                                <a href="#home" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">HOME</a>
+                                {/* <a href="#aboutme" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">ABOUT ME</a> */}
+                                <a href="#skills" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">SKILLS</a>
+                                <a href="#projects" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">PROJECTS</a>
+                                <a href="#contact" className="hover:text-gray-300 xl:text-2xl lg:text-xl sm:text-lg text-base cursor-pointer">LET WORK TOGETHER</a>
+                            </ul>
+                        </div>
+                    </ScrollWrapper>
                 </div>
             </nav>
         </>
