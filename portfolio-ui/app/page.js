@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react";
 import Image from "next/image";
-import { Button } from "./components/Button";
+import { Button, IconButton } from "./components/Button";
 import { FaGitAlt, FaNodeJs } from "react-icons/fa";
-import { IoLogoReact, IoLogoGithub } from "react-icons/io5";
+import { IoLogoReact, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import ProjectCard from "./components/ProjectCard";
 import SkillsCard from "./components/SkillsCard";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
@@ -11,20 +11,12 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
 import Navbar from "./components/Navbar";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiLinktree } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { PiFigmaLogo } from "react-icons/pi";
 import { FaLaptopCode, FaUserCheck } from "react-icons/fa";
 
 export default function Home() {
-
-  const openMail = () => {
-    window.location.href = "#contact"
-  };
-
-  const openLinkedIn = () => {
-    window.location.href = "#projects"
-  };
 
   return (
     <>
@@ -33,8 +25,8 @@ export default function Home() {
 
       {/* homesection */}
       <ScrollWrapper direction="down" ease="easeOut">
-        <section id="home" className="text-gray-400 md:pt-28 pt-16 flex w-full">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-2 px-5 pb-10 w-full sm:pt-20 pt-16 justify-center">
+        <section id="home" className="text-gray-400 md:pt-[110px] pt-12 flex w-full">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-0.5 px-5 pb-10 w-full sm:pt-20 pt-16 justify-center">
             <div className="flex justify-center items-center">
               <Image
                 src="/images/my-image.jpg"
@@ -43,15 +35,22 @@ export default function Home() {
                 height={300}
                 loading='eager'
                 unoptimized
-                className="mb-10 object-cover object-center rounded-lg"
+                className="mb-10 object-cover object-center md:w-[350px] lg:h-[350px] rounded-[40px]"
               />
             </div>
-            <div className="flex flex-col justify-items-start">
-              <h1 className="title-font text-left sm:text-[28px] lg:text-[34px] text-[22px] mb-4 font-semibold font-mono text-white">Frontend-Focused Full-Stack Web Developer</h1>
-              <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl mb-8 font-light font-mono">I build complete, production-ready web applications for startups and small businesses — from clean frontends to authentication, dashboards, APIs, and databases.</p>
-              <div className="flex sm:flex-row flex-col md:justify-start justify-center gap-4">
-                <Button onClick={openMail} icon={<FaUserCheck />} title="Hire Me" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
-                <Button onClick={openLinkedIn} icon={<FaLaptopCode />} title="View Projects" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+            <div className="flex flex-col justify-items-start gap-2.5">
+              <h1 className="title-font text-left sm:text-[28px] lg:text-[34px] text-[22px] font-semibold font-mono text-white">Frontend-Focused Full-Stack Web Developer</h1>
+              <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light font-mono">I build complete, production-ready web applications for startups and small businesses — from clean frontends to authentication, dashboards, APIs, and databases.</p>
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-row justify-start gap-4">
+                  <Button href={"#contact"} icon={<FaUserCheck />} title="Hire Me" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                  <Button href={"#projects"} icon={<FaLaptopCode />} title="Projects" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                </div>
+                <div className="flex flex-row sm:justify-start justify-center gap-4">
+                  <IconButton href={"https://www.linkedin.com/in/safdar-chougle"} icon={<IoLogoLinkedin />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                  <IconButton href={"https://github.com/chouglesafdar22"} icon={<IoLogoGithub />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                  <IconButton href={"https://linktr.ee/safdarchougle22"} icon={<SiLinktree />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                </div>
               </div>
             </div>
           </div>
@@ -76,11 +75,11 @@ export default function Home() {
 
       {/* projectsection */}
       <section id="projects" className="pt-14 flex w-full">
-        <div className="container mx-auto flex flex-col justify-center py-10 px-5 gap-6">
+        <div className="container mx-auto flex flex-col justify-center py-12 px-5 gap-6">
           <ScrollWrapper direction="fade" ease="easeIn">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-mono font-medium">PROJECTS</h2>
           </ScrollWrapper>
-          <div className="flex items-center w-full flex-wrap justify-center gap-10">
+          <div className="flex items-center w-full flex-wrap justify-center gap-11">
             <ScrollWrapper direction="down" ease="easeOut">
               <ProjectCard href={"https://github.com/chouglesafdar22/Modern-Ecommerce"} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A full-stack e-commerce web application built using the MERN stack. This project focuses on implementing the core structure of an online store with frontend and backend integration. Tech Stack - Next.js / React, Node.js, Express.js, MongoDB, Tailwind CSS." />
             </ScrollWrapper>
