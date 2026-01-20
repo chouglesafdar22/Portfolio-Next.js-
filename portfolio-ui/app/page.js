@@ -35,7 +35,7 @@ export default function Home() {
                 height={300}
                 loading='eager'
                 unoptimized
-                className="mb-10 object-cover object-center md:w-[350px] lg:h-[350px] rounded-[40px]"
+                className="mb-10 object-cover object-center md:w-[350px] lg:h-[350px] rounded-tr-[30px] rounded-bl-[30px] rounded-tl-[15px] rounded-br-[15px]"
               />
             </div>
             <div className="flex flex-col justify-items-start gap-2.5">
@@ -46,7 +46,7 @@ export default function Home() {
                   <Button href={"#contact"} icon={<FaUserCheck />} title="Hire Me" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                   <Button href={"#projects"} icon={<FaLaptopCode />} title="Projects" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 </div>
-                <div className="flex flex-row sm:justify-start justify-center gap-4">
+                <div className="flex flex-row justify-start gap-4">
                   <IconButton href={"https://www.linkedin.com/in/safdar-chougle"} icon={<IoLogoLinkedin />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                   <IconButton href={"https://github.com/chouglesafdar22"} icon={<IoLogoGithub />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                   <IconButton href={"https://linktr.ee/safdarchougle22"} icon={<SiLinktree />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
