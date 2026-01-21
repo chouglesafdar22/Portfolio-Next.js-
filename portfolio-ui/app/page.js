@@ -36,13 +36,12 @@ export default function Home() {
                 height={300}
                 loading='eager'
                 unoptimized
-                className="mb-6 object-cover object-center md:w-[350px] lg:h-[350px] rounded-tr-[30px] rounded-bl-[30px] rounded-tl-[15px] rounded-br-[15px]"
+                className="mb-6 object-cover object-center lg:w-[500px] lg:h-[400px] rounded-tr-[30px] rounded-bl-[30px] rounded-tl-[15px] rounded-br-[15px]"
               />
             </div>
             <div className="flex flex-col justify-items-start gap-2.5">
               <h1 className="title-font text-left sm:text-[28px] lg:text-[34px] text-[22px] font-semibold text-white">Frontend-Focused Full-Stack Web Developer</h1>
-              <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">I build complete, production-ready web applications for startups and small businesses — from clean frontends to authentication, dashboards, APIs, and databases.</p>
-              {/* <Link href={"/about"} className="text-blue-700 hover:underline hover:text-gray-400">more</Link> */}
+              <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">I build complete, production-ready web applications for startups and small businesses — from clean frontends to authentication, dashboards, APIs, and databases. <Link href={"/about"} className="text-blue-700 hover:underline hover:text-gray-400">more</Link></p>
               <div className="flex flex-col gap-5">
                 <div className="flex flex-row justify-start gap-4">
                   <Button href={"#contact"} icon={<FaUserCheck />} title="Hire Me" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
