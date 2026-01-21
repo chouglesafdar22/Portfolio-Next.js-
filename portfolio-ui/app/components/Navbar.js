@@ -8,11 +8,11 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar flex flex-col fixed top-0 w-full bg-black/30 backdrop-blur-sm z-40 md:py-5 py-3 md:px-5 px-3">
+            <nav className="navbar flex flex-col fixed top-0 w-full border-b-2 border-b-gray-100 bg-black/30 backdrop-blur-sm z-40 md:py-5 py-3 md:px-5 px-3">
                 <div className="flex flex-col">
                     <div className="justify-between flex flex-row items-center">
                         <div className="logo justify-center items-center text-center">
-                            <h1 className="xl:text-3xl lg:text-2xl sm:text-xl text-lg text-white font-extrabold font-sans">
+                            <h1 className="xl:text-3xl lg:text-2xl sm:text-xl text-lg text-white font-bold font-sans">
                                 Safdar Chougle
                             </h1>
                         </div>

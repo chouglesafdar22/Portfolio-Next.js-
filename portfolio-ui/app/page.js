@@ -15,6 +15,7 @@ import { SiExpress, SiMongodb, SiLinktree } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { PiFigmaLogo } from "react-icons/pi";
 import { FaLaptopCode, FaUserCheck } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ export default function Home() {
       {/* homesection */}
       <ScrollWrapper direction="down" ease="easeOut">
         <section id="home" className="text-gray-400 md:pt-[110px] pt-12 flex w-full">
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-0.5 px-5 pb-10 w-full sm:pt-20 pt-16 justify-center">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-0.5 px-5 pb-8 w-full sm:pt-20 pt-16 justify-center">
             <div className="flex justify-center items-center">
               <Image
                 src="/images/my-image.jpg"
@@ -35,12 +36,13 @@ export default function Home() {
                 height={300}
                 loading='eager'
                 unoptimized
-                className="mb-10 object-cover object-center md:w-[350px] lg:h-[350px] rounded-tr-[30px] rounded-bl-[30px] rounded-tl-[15px] rounded-br-[15px]"
+                className="mb-6 object-cover object-center md:w-[350px] lg:h-[350px] rounded-tr-[30px] rounded-bl-[30px] rounded-tl-[15px] rounded-br-[15px]"
               />
             </div>
             <div className="flex flex-col justify-items-start gap-2.5">
-              <h1 className="title-font text-left sm:text-[28px] lg:text-[34px] text-[22px] font-semibold font-mono text-white">Frontend-Focused Full-Stack Web Developer</h1>
-              <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light font-mono">I build complete, production-ready web applications for startups and small businesses — from clean frontends to authentication, dashboards, APIs, and databases.</p>
+              <h1 className="title-font text-left sm:text-[28px] lg:text-[34px] text-[22px] font-semibold text-white">Frontend-Focused Full-Stack Web Developer</h1>
+              <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">I build complete, production-ready web applications for startups and small businesses — from clean frontends to authentication, dashboards, APIs, and databases.</p>
+              {/* <Link href={"/about"} className="text-blue-700 hover:underline hover:text-gray-400">more</Link> */}
               <div className="flex flex-col gap-5">
                 <div className="flex flex-row justify-start gap-4">
                   <Button href={"#contact"} icon={<FaUserCheck />} title="Hire Me" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
@@ -61,7 +63,7 @@ export default function Home() {
       <section id="skills" className="text-gray-400 pt-14 flex justify-center w-full">
         <div className="flex flex-col justify-center py-10 px-5 gap-10">
           <ScrollWrapper direction="fade" ease="easeIn">
-            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-mono font-medium">SKILLS</h2>
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-medium">SKILLS</h2>
           </ScrollWrapper>
           <ScrollWrapper direction="left" ease="easeInOut">
             <div className="flex flex-col md:gap-14 gap-7 items-center justify-center">
@@ -77,7 +79,7 @@ export default function Home() {
       <section id="projects" className="pt-14 flex w-full">
         <div className="container mx-auto flex flex-col justify-center py-12 px-5 gap-6">
           <ScrollWrapper direction="fade" ease="easeIn">
-            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-mono font-medium">PROJECTS</h2>
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-medium">PROJECTS</h2>
           </ScrollWrapper>
           <div className="flex items-center w-full flex-wrap justify-center gap-11">
             <ScrollWrapper direction="down" ease="easeOut">
@@ -97,8 +99,8 @@ export default function Home() {
       <ScrollWrapper direction="down" ease="easeOut" >
         <section id="contact" className="text-gray-400 pt-14 flex w-full">
           <div className="container mx-auto flex flex-col justify-center py-10 px-5 gap-6">
-            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-mono font-medium">LET WORK TOGETHER</h2>
-            <p className="leading-relaxed md:text-center text-white text-left text-lg sm:text-xl lg:text-2xl font-light font-mono">Have a project idea or need a frontend-focused full-stack web developer?</p>
+            <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-medium">LET WORK TOGETHER</h2>
+            <p className="leading-relaxed md:text-center text-white text-left text-lg sm:text-xl lg:text-2xl font-light">Have a project idea or need a frontend-focused full-stack web developer?</p>
             <div className="flex justify-center items-center text-center">
               <ContactForm />
             </div>
