@@ -95,7 +95,7 @@ export default function About() {
                             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-medium">
                                 Contact
                             </h2>
-                            <div className="flex flex-wrap md:justify-center justify-start gap-5">
+                            <div className="flex flex-wrap md:justify-center justify-start gap-2">
                                 <LinkButton href={"mailto:chouglesafdar22@gmail.com"} icon={<MdEmail />} title="Email" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                                 <LinkButton href={"https://linktr.ee/safdarchougle22"} icon={<SiLinktree />} title="Linktree" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                                 <LinkButton href={"https://www.linkedin.com/in/safdar-chougle"} icon={<IoLogoLinkedin />} title="LinkedIn" hoverTextSize="hover:text-xl" textSize="text-lg" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
