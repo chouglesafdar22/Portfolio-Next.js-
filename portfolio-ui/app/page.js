@@ -82,6 +82,9 @@ export default function Home() {
           </ScrollWrapper>
           <div className="flex items-center w-full flex-wrap justify-center gap-11">
             <ScrollWrapper direction="down" ease="easeOut">
+              <ProjectCard href={"https://github.com/chouglesafdar22/GitPortify"} image="/images/gitportify.png" title="GitPortify" description="A full-stack SaaS portfolio builder that allows developers to create and publish professional portfolio websites instantly. This project focuses on real-world application architecture with authentication, dynamic templates, and deployment. Tech Stack - Next.js, React, TypeScript, MongoDB, NextAuth, Tailwind CSS." />
+            </ScrollWrapper>
+            <ScrollWrapper direction="down" ease="easeOut">
               <ProjectCard href={"https://github.com/chouglesafdar22/Modern-Ecommerce"} image="/images/modern_ecommerce.png" title="Modern Ecommerce" description="A full-stack e-commerce web application built using the MERN stack. This project focuses on implementing the core structure of an online store with frontend and backend integration. Tech Stack - Next.js / React, Node.js, Express.js, MongoDB, Tailwind CSS." />
             </ScrollWrapper>
             <ScrollWrapper direction="down" ease="easeOut">
