@@ -1,5 +1,4 @@
 "use client"
-import { useState } from "react";
 import Image from "next/image";
 import { Button, IconButton } from "./components/Button";
 import { FaGitAlt, FaNodeJs } from "react-icons/fa";
@@ -11,7 +10,7 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
 import Navbar from "./components/Navbar";
-import { SiExpress, SiMongodb, SiLinktree } from "react-icons/si";
+import { SiExpress, SiMongodb, SiLinktree, SiFiverr  } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { PiFigmaLogo } from "react-icons/pi";
 import { FaLaptopCode, FaUserCheck } from "react-icons/fa";
@@ -51,6 +50,7 @@ export default function Home() {
                   <IconButton href={"https://www.linkedin.com/in/safdar-chougle"} icon={<IoLogoLinkedin />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                   <IconButton href={"https://github.com/chouglesafdar22"} icon={<IoLogoGithub />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                   <IconButton href={"https://linktr.ee/safdarchougle22"} icon={<SiLinktree />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
+                  <IconButton href={"https://www.fiverr.com/safdarchougle/"} icon={<SiFiverr />} hoverTextSize="hover:text-xl" textSize="text-2xl" size={40} bgColor="bg-indigo-500" textColor="text-white" hoverTextColor="hover:text-gray-300" hoverBgColor="hover:bg-gray-600" />
                 </div>
               </div>
             </div>
