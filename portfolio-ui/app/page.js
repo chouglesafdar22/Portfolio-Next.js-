@@ -102,7 +102,7 @@ export default function Home() {
         <section id="contact" className="text-gray-400 pt-14 flex w-full">
           <div className="container mx-auto flex flex-col justify-center py-10 px-5 gap-6">
             <h2 className="lg:text-4xl sm:text-3xl text-2xl text-white md:text-center text-left font-medium">LET WORK TOGETHER</h2>
-            <p className="leading-relaxed md:text-center text-white text-left text-lg sm:text-xl lg:text-2xl font-light">Have a project idea or need a frontend-focused full-stack web developer?</p>
+            <p className="leading-relaxed md:text-center text-white text-left text-lg sm:text-xl lg:text-2xl font-light">Have a project idea or need a MERN stack web developer?</p>
             <div className="flex justify-center items-center text-center">
               <ContactForm />
             </div>
