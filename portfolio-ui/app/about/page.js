@@ -34,16 +34,19 @@ export default function About() {
                                 Hii, I am Safdar Chougle
                             </h1>
                             <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">
-                                I am a frontend-focused full-stack web developer who builds production-ready web applications using modern technologies.
+                                I am a MERN stack web developer who builds production-ready web applications using modern technologies.
                             </p>
                             <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">
-                                I specialize in creating clean, user-friendly frontends and supporting them with secure authentication, admin dashboards, backend APIs, and well-structured databases.
+                                I design clean and intuitive user interfaces in Figma and develop user-friendly frontends, supported by secure authentication, admin dashboards, backend APIs, and well-structured databases using MongoDB, Express, React, and Node.js.
                             </p>
                             <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">
                                 I enjoy working on real-world problems where I can own features end-to-end and deliver applications that are fully functional, deployed, and ready for users — not just demos.
                             </p>
                             <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">
-                                I am currently open to remote entry-level roles, contract work, or freelance opportunities, where I can contribute, learn, and grow.
+                                I am currently open to remote entry-level roles, contract work, and freelance opportunities.
+                            </p>
+                            <p className="leading-relaxed text-left text-lg sm:text-xl lg:text-2xl font-light">
+                                I also offer web development services on Fiverr and Freelancer.com
                             </p>
                         </div>
                         <div className="flex justify-center items-center py-3">
